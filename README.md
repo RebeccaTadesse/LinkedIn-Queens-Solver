@@ -26,6 +26,13 @@ The logic I used for this is based on the knowledge that, if there are n queens 
 ## To Run
 At present, I have the file containing the backtracking solver, all its helper functions and I test four sample boards, three with solutions and one without. To run, use any python IDE and run the file.
 
+## Tests
+I have chosen four boards of varying sizes to test, and have represented them as 2-D arrays where the elements are lists of two elements each: the color, and the state of the cell. At the start, the state of each cell is empty (denoted by an asterisk *). I have included these along with their solutions in the directory 'sample_boards'
+
+You will notice that the fourth board does not have a valid solution. This board is, in fact, the reason I created my solver. I recently wanted to re-attempt previous queens puzzles that I had missed, and this one *stumped me*. For the first time, I simply couldn't find a solution to one of these puzzles, and I needed to find out if it was unsolvable, or if I was missing something.
+
+Upon further research, board 4 (b4) is an erroneous recreation of queens #171, shown in board 3 (b3). The difference is in the bottom left square is orange instead of purple, making it unsolvable, unlike the original.
+
 ## To expand
 Currently, you would have to initialize the grid you would like to test, and it can be a lengthy, time-consuming process. I plan to implement some sort of GUI, perhaps with pygame, or maybe even show colored text in the terminal by use or Colorama or ANSI escape sequences.
 
